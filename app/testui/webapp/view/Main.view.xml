@@ -1,0 +1,27 @@
+<mvc:View controllerName="cap.libraries.testui.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:Custom="cap.libraries.testui.control">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Panel headerText="Custom Control 1: Submit Rating">
+                <VBox>
+                    <Link text="Go to blog post" target="_blank" href="https://youtu.be/QEUIjWA_wcY" />
+                    <Custom:Rating valueSubmit="handleSubmitRating" />
+                </VBox>
+            </Panel>
+            <Panel headerText="Custom Control 2: Shadow Box">
+                <VBox>
+                    <Link text="Go to blog post" target="_blank" href="https://blogs.sap.com/2016/07/18/how-to-create-a-custom-ui5-control/" />
+                    <Custom:ShadowBox width="200px">
+                        <Label text="Well well well" />
+                        <Input value="we have a container" />
+                    </Custom:ShadowBox>
+                </VBox>
+            </Panel>
+            <Panel headerText="Custom Control 3: Traffic Light Indicator">
+                <VBox>
+                    <Link text="Go to blog post" target="_blank" href="https://www.skybuffer.com/how-to-create-a-custom-control-using-sapui5-framework/" />
+                    <Custom:TrafficLightIndicator currentState="0" stopColor="#CC0015" warningColor="#FFF400" goColor="#009900" />
+                </VBox>
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>
